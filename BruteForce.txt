@@ -1,3 +1,22 @@
 14.December.2024
 
 Brute Force Vulnerability Exploitation in DVWA 
+
+This report documents the findings from a security test performed on the Damn Vulnerable Web Application (DVWA) using the Burp Suite tool to simulate a brute force attack.
+
+Scenario :
+    A brute force attack was performed to exploit the login page of DVWA. 
+    This attack involved automating multiple login attempts by submitting combinations of usernames and passwords until the correct credentials were identified.
+
+Low Level        - No countermeasures .Predictable server response for successful login attempts
+Medium Level     - Slight delay if password or username is incorrect .Error messages for invalid credentials .
+High Level       - Strong rate-limiting ,account lockout after number of attempts .Error messages were standardized
+Impossible Level - User token is hidden .Token based authentication .
+
+Recommended :
+    1. Implement Strong Lockout.
+    2. Introduce CAPTCHA.
+    3. Enforce Rate-Limit.
+    4. Multi-Factor Authentication.
+    5. Token-Based Authentication.
+
