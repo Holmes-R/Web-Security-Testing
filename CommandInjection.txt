@@ -1,1 +1,20 @@
+21.December.2024
 
+Command Injection in DVWA
+
+This report documents the findings from a security test performed on the Damn Vulnerable Web Application (DVWA) to assess vulnerabilities related to command injection.
+
+Scenario : 
+    A Command Injection attack was performed to exploit the application's functionality, allowing attackers to execute unauthorized commands on the host operating system.
+     The attack manipulated inputs to bypass restrictions and achieve Remote Command Execution (RCE). The test results were analyzed based on DVWA's predefined security levels.
+
+Low Level        - The application allows direct input into PHP functions that execute commands on the OS.It is possible to escape the intended command logic and append arbitrary commands for execution.
+Medium Level     - Pattern matching is implemented to filter some command inputs.However, incomplete filtering allows alternative system syntaxes to bypass the restrictions.
+Hard Level       - Enhanced input filtering is applied, matching a broader range of patterns.Developer attempts to use specific PHP functions for sanitization but includes slight errors or typos, leaving room for bypass.
+Impossible Level - Input validation is restructured to allow only specific, whitelisted values.
+
+Recommended : 
+    1. Sanitization of input .
+    2. Restrict Command Execution .
+    3. MFA .
+    4. Enforce Least Privilege Principle .
