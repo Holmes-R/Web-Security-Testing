@@ -13,3 +13,8 @@ Medium Level     -  A basic referer check is implemented to validate the origin 
 Hard Level       -  The application introduces an anti-CSRF token mechanism.
 Impossible Level - The application enforces strict validation by requiring the user's current password along with the new password.Without access to the user's credentials, attackers cannot perform unauthorized actions.
 
+Recommended :
+    1. CSRF Token .
+    2. SameSite Cookies .
+    3. Referer-Header
+    
