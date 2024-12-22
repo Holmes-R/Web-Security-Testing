@@ -2,5 +2,14 @@
 
 CSRF Vulnerability in DVWA
 
-sdgdsdsf\stdsf
+To evaluate the robustness of DVWA against CSRF attacks by analyzing vulnerabilities across its predefined security levels
+
+Scenario :
+    A CSRF attack attempts to trick a user into executing unauthorized actions on a web application in which they are authenticated. 
+    The test exploited scenarios where attackers could craft malicious links or forms, leveraging the victim’s session to execute unintended actions.
+
+Low Leve         -  Attackers can craft malicious links or forms to perform sensitive actions, such as changing a user's password, without their consent.
+Medium Level     -  A basic referer check is implemented to validate the origin of requests.
+Hard Level       -  The application introduces an anti-CSRF token mechanism.
+Impossible Level - The application enforces strict validation by requiring the user's current password along with the new password.Without access to the user's credentials, attackers cannot perform unauthorized actions.
 
