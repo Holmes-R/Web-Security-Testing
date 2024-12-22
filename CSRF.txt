@@ -16,5 +16,5 @@ Impossible Level - The application enforces strict validation by requiring the u
 Recommended :
     1. CSRF Token .
     2. SameSite Cookies .
-    3. Referer-Header
+    3. Referer-Header .
     
