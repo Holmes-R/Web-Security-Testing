@@ -6,5 +6,14 @@ Weak Session in DVWA
 To assess the robustness of DVWA (Damn Vulnerable Web Application) against weak session management vulnerabilities
 
 Scenario:
-
     Weak session management vulnerabilities occur when session IDs are poorly implemented, allowing attackers to hijack or manipulate sessions to impersonate users.
+
+Low Leve         - Session IDs are short, predictable, and based on non-random data .
+Medium Level     -  Session IDs are slightly more complex but still lack sufficient randomness and entropy.
+Hard Level       -  Session IDs are generated using pseudo-random values, providing moderate resistance to brute-force attacks.
+Impossible Level - Session IDs are cryptographically secure and regenerated upon login or privilege changes.
+
+Recommended :
+    1. Implement Cryptographically Secure Session IDs
+    2. Use SameSite Cookies .
+    3. Secure Transmission
