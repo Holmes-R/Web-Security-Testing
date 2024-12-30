@@ -1,3 +1,10 @@
 29-December-2024
 
 Weak Session in DVWA 
+
+
+To assess the robustness of DVWA (Damn Vulnerable Web Application) against weak session management vulnerabilities
+
+Scenario:
+
+    Weak session management vulnerabilities occur when session IDs are poorly implemented, allowing attackers to hijack or manipulate sessions to impersonate users.
