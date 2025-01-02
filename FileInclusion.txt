@@ -2,3 +2,11 @@
 
 File Inclusion Vulnerability in DVWA
 
+Scenario:
+
+
+
+Low Level        - 
+Medium Level     - 
+High Level       -
+Impossible Level - 
